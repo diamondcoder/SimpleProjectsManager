@@ -64,18 +64,18 @@ class App extends Component {
     this.setState({projects:[
       {
         id:uuid.v4(),
-        title:'one',
-        category:'books'
+        title:'Fast and Furios',
+        category:'Web Design'
       },
       {
         id:uuid.v4(),
-        title:'two',
-        category:'food'
+        title:'Jane the virgin',
+        category:'Mobile Development'
       },
       {
         id:uuid.v4(),
-        title:'three',
-        category:'books'
+        title:'Silicon Valley',
+        category:'Api Development'
       },
       {
         id:uuid.v4(),
@@ -109,9 +109,12 @@ class App extends Component {
     return (
       <div className="App">
 
-      My App
+      <div className="App-header">
+      <p className="App-title">Simple Project Management System </p>
+      </div>
         <AddProjects addProject={this.handleAddProject.bind(this)}/>
-          <h3>Projects</h3>
+
+          <h3 >Projects</h3>
 
       <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
 

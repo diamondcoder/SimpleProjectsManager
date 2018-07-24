@@ -10,7 +10,7 @@ class TodoItem extends Component {
     return (
       <li className="ProjectsItem" >
       {this.props.todo.title} - {this.props.todo.completed} -
-      <button onClick={ this.deleteTodo.bind(this, this.props.todo.id) }>Complete</button>
+         <button onClick={ this.deleteTodo.bind(this, this.props.todo.id) }>x</button>
       </li>
     );
   }

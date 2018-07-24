@@ -40,22 +40,26 @@ handleSubmit(e){
 
 
     return (
-      <div className="Projects">
-    <h3>  Add Projects </h3>
+      <div className="addProj">
+    <p className="addProjTitle">  Add Projects </p>
     <form onSubmit={this.handleSubmit.bind(this)}>
      <div>
     <label> Title </label><br />
+    <br/>
     <input type="text" ref= "title" />
     </div>
+    <br/>
     <div>
-        <label> Category </label><br />
+        <label> Category </label>
+        <br /><br/>
         <select ref="category">
         {categoryoptions}
 
 
         </select>
         </div>
-        <input type="submit" value="Submit" />
+        <br/>
+        <input className="addbutton" type="submit" value="Submit" />
     </form>
       </div>
     );
